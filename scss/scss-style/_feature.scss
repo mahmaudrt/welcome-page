@@ -1,0 +1,125 @@
+/* === 4. Feature Section === */
+
+#feature{
+  background: url(../../img/feature/feature-bg.jpg) no-repeat center center / cover;
+  .section-title{
+    @include section_title;
+    p{
+      width: 50%;
+    }
+  }
+  .feature-search{
+    margin: 60px 0;
+    span{
+      color: $text-color-02;
+      font-size: 16px;
+      margin-right: 8px;
+    }
+    input{
+      width: 55%;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      &:focus{
+        color: $text-color-02;
+        font-weight: 600;
+      }
+      &::placeholder{
+        position: relative;
+        margin-top: 40px;
+        color: $text-color-02;
+        display: inline-block;
+        font-size: 14px;
+        font-weight:600;
+      }
+    }
+  }
+  .feature-img-call{
+    margin-bottom: 55px;
+    .feature-img{
+      img{}
+    }
+    .feature-call{
+      span{
+        color: $text-color-01;
+        font-size: 12px;
+      }
+      h3{
+        color: $text-color-01;
+        margin-top: 8px;
+      }
+      .feature-btn{
+        a{
+          position: relative;
+          padding: 10px 35px;
+          margin-top: 40px;
+          background: linear-gradient(0deg,#fff,#fff);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          display: inline-block;
+          text-transform: capitalize;
+          font-size: 12px;
+          font-weight:700;
+          i{
+            margin-left: 10px;
+            color: $text-color-01;
+            border-radius: 50%;
+            display: inline-block;
+            padding: 5px;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 0 25px;
+            border: 2px solid #8c5dec;
+            -webkit-mask: 
+              linear-gradient(#fff 0 0) content-box, 
+              linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+          }
+        }
+      }
+    }
+  }
+  .recommend{
+    color: $text-color-01;
+    margin-bottom: 30px;
+    .recommend-new{
+      span{
+        color: $text-color-02;
+        font-size: 16px;
+      }
+      h3{
+        font-size: 20px;
+      }
+    }
+    .sea{
+      text-align: right;
+      span{
+        font-size: 16px;
+        margin-top: 25px;
+        display: inline-block;
+      }
+      i{
+        font-size: 16px;
+        margin-left: 10px;
+      }
+    }
+  }
+  .feature-single-box{
+    img{
+      width: 100%;
+    }
+    h3{
+      color: $text-color-01;
+      margin-top: 20px;
+    }
+    span{
+      color: $text-color-02;
+      font-size: 12px;
+    }
+  }
+}
+

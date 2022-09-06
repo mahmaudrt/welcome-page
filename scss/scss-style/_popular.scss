@@ -1,0 +1,132 @@
+/* === 3. Popular Section === */
+
+#popular{
+  background: $bg-color-01;
+  color: $text-color-01;
+  .section-area{
+    display: flex;
+    justify-content: space-between
+  }
+  .section-title {
+    @include section_title;
+  }
+  .popular-left{
+    margin-top: 80px;
+    span{
+      color: $text-color-01;
+      font-size: 16px;
+      margin-right: 10px;
+    }
+    i{
+      font-size: 16px;
+    }
+  }
+  .popular-img-box{
+    margin-top: 60px;
+    .album-box{
+      .bg-img{
+        position: relative;
+        img{
+        }
+        .count{
+          position: absolute;
+          top: 30px;
+          left: 20px;
+          span{
+            background: $bg-color-02;
+            color: $text-color-01;
+            font-size: 24px;
+            display: inline-block;
+            padding: 20px;
+            border-radius: 50%;
+            border: 2px solid #2691d7;
+          }
+        }
+        .favourite{
+          position: absolute;
+          bottom: 35%;
+          left: 20px;
+          background: #815093;
+          padding: 10px 25px;
+          border: 2px solid #535ae0;
+          border-radius: 0 20px;
+          i{
+            font-size: 12px;
+          }
+          span{
+            display: inline-block;
+            margin-left: 5px;
+            font-size: 12px;
+          }
+        }
+        .summer{
+          position: absolute;
+          left: 20px;
+          bottom: 20px;
+          p{
+            background: #08568f;
+            opacity: .8;
+            font-size: 18px;
+            padding: 20px 40px;
+            border: 2px solid $text-color-02;
+            border-radius: 0 25px;
+          }
+        }
+      }
+    }
+    .album-img-box{
+      .album-single{
+        margin-bottom: 20px;
+        .album-bg-img{
+          position: relative;
+          img{
+            width: 100%;
+          }
+          .love-icon{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            i{
+              font-size: 16px;
+              position: relative;
+              z-index: 1;
+              &::after{
+                content: '';
+                position: absolute;
+                top: -6px;
+                right: -6px;
+                width: 30px;
+                height: 30px;
+                background: #fa2157;
+                border-radius: 50%;
+                z-index: -1;
+              }  
+            }
+          }
+          .love-icon-02{
+            i{
+              &::after{
+                background: #044292;
+              }
+            }
+          }
+          h3{
+            position: absolute;
+            left: 25px;
+            bottom: 45px;
+            font-size: 16px;
+          }
+          span{
+            position: absolute;
+            left: 25px;
+            bottom: 25px;
+            font-size: 15px;
+            font-weight: 300;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+

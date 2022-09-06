@@ -1,0 +1,51 @@
+/* === 2. Header Section === */
+
+.header{
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  transition: .3s;
+  &.sticky{
+    background: #b2010f;
+    opacity: .8;
+  }
+  .logo{
+  }
+  .header-nav{
+    ul{
+      justify-content: center;
+      li{
+        margin-right: 15px;
+        &.current{
+          background: #1f1719;
+            border-bottom: 3px solid $border-color-03;
+        }
+        a{
+          opacity: .9;
+          color: $text-color-01;
+          font-size: 14px;
+          text-transform: uppercase;
+          display: inline-block;
+          padding: 30px 20px;
+          border-bottom: 3px solid transparent;
+          transition: .3s ease;
+          &:hover{
+            background: #1f1719;
+            border-bottom: 3px solid $border-color-03;
+          }
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .menu-bar{
+    text-align: right;
+  }
+}

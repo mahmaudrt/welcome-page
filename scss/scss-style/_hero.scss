@@ -1,0 +1,50 @@
+/* === 3. Hero Section === */
+#hero{
+  background: url(../../img/banner-bg.jpg) no-repeat center center / cover;
+  max-width: 100%;
+  h1{
+    color: #1793f0;
+    font-size: 85px;
+    font-weight: 800;
+    margin-top: 70px;
+    line-height: 95px;
+    span{
+      color: #4f5ee1;
+    }
+  }
+  p{
+    color: $text-color-01;
+    font-size: 17px;
+    width: 90%;
+    margin-top: 20px;
+  }
+  .btn{
+    
+    a{
+      position: relative;
+      padding: 16px 35px;
+      margin-top: 40px;
+      background: $bg-gradient-03;
+      background: -moz-linear-gradient(to top,#1496f1,#8c5dec);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 17px;
+      font-weight:700;
+      &::after{
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: 0 20px;
+        border: 2px solid #8c5dec;
+        -webkit-mask: 
+          linear-gradient(#fff 0 0) content-box, 
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+      }
+    }
+  }
+}
+
+

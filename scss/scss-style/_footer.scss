@@ -1,0 +1,108 @@
+/* === 8. Footer Section === */
+
+#footer{
+  background: $bg-color-03;
+  color: $text-color-01;
+  padding: 100px 0 50px 0;
+  .footer-social{
+    .footer-img{
+      img{
+        width: 160px;
+      }
+    }
+    p{
+      font-size: 14px;
+      margin: 40px 0;
+      width: 75%;
+    }
+    .social{
+      ul{
+        li{
+          margin-right: 5px;
+          a{
+            color: $text-color-01;
+            font-size: 16px;
+            transition: 1s ease-in-out;
+            padding: 5px 15px;
+            border-radius: 0 10px;
+            position: relative;
+            z-index: 1;
+            &::after{
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              z-index: -1;
+              left: 0;
+              top: 0;
+              background: $bg-gradient-02;
+              border-radius: 0 10px;
+              opacity: 0;
+              transition: 0.5s ease-in-out;
+            }
+            
+            &:hover{
+              background: $bg-gradient-02;
+              border-radius: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-common{
+    h3{
+      color: $text-color-01;
+      font-size: 18px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-left: 17px;
+      margin-bottom: 30px;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        background: $bg-gradient-01;
+        top: 2px;
+        left: -15px;
+        width: 3px ;
+        height: 15px;
+        border-radius: 0 20px;
+      }
+    }
+    ul{
+      li{
+        font-size: 14px;
+        transition: .3s;
+        margin-top: 15px;
+        span{
+          display: inline-block;
+          margin-right: 10px;
+          i{
+            font-size: 12px;
+            color: $text-color-01;
+            cursor: pointer;
+          }
+        }
+        &:hover{
+          color: $hover-color;
+          cursor: pointer;
+        }
+        &:hover span i{
+          color: $text-color-01;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .bt-top{
+    border-top: 2px solid $border-color;
+    margin: 20px 0 0 0;
+  }
+  .footer-copyright{
+    color: $text-color-01;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 50px;
+  }
+}
